@@ -9,7 +9,7 @@
 class Matrix {
 private:
 
-	double** m; // m é um array 2D a ser implementado como um pointer de pointers
+	double** m; // m Ã© um array 2D a ser implementado como um pointer de pointers
 	int nRows;  // numero de linhas
 	int nCols;  //  numero de colunas
 
@@ -19,7 +19,7 @@ public:
 	Matrix();
 	//NOVO CODIGO
 	Matrix(int rows, int cols, const double &value = 0.0);
-	Matrix( <ifstream> &myFile);
+	Matrix(ifstream &myFile);
 	Matrix(const Matrix &that);
 	//
 	// destrutor
@@ -28,7 +28,7 @@ public:
 	// basic getters
 	int getRows() const;
 	int getCols() const;
-	//Nova função
+	//Nova funÃ§Ã£o
 	double get(int ls, int cs) const;
 	//
 
