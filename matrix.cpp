@@ -1,7 +1,6 @@
 #include <iostream>
 #include "matrix.h"
 #include <fstream>
-#include <string>
 
 using namespace std;
 
@@ -26,7 +25,7 @@ Matrix::Matrix(int rows, int cols, const double &value)
 	}
 }
 
-Matrix::Matrix(ifstream &myFile)
+Matrix::Matrix(std:: ifstream &myFile)
 {
 	myFile.open("myfile.doc");
 
