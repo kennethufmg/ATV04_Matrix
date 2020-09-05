@@ -29,7 +29,6 @@ Matrix::Matrix(int rows, int cols, const double &value)
 Matrix::Matrix(ifstream &myFile)
 {
 	myFile.open("myfile.doc");
-	string s;
 
 	if (myFile.fail() == 1) 
 	{
