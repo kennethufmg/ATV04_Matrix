@@ -19,7 +19,7 @@ public:
 	Matrix();
 	//NOVO CODIGO
 	Matrix(int rows, int cols, const double &value = 0.0);
-	Matrix(ifstream &myFile);
+	Matrix(std::ifstream &myFile);
 	Matrix(const Matrix &that);
 	//
 	// destrutor
