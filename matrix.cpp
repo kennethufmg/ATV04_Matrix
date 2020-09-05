@@ -35,7 +35,19 @@ Matrix::Matrix(std:: ifstream &myFile)
 	}
 	else 
 	{
-		
+	double value = 0.0;
+
+		myFile >> nRows;
+		myFile >> nCols;
+		//cout << "n:" << nRows << " - " << nCols << endl;
+
+		m = new double*[nRows];
+		for (int i = 0; i < nRows; i++)
+			m[i] = new double[nCols];
+
+		for (int i = 0; i < nRows; i++)
+			for (int j = 0; j < nCols; j++)
+				myFile >> m[i][j];	
 		
 	}
 	myFile.close();
@@ -111,6 +123,7 @@ void Matrix::print() const
 			cout << m[i][j]<< " ";
 		cout << "\n";
 	}
+	cout << endl;
 }
 
 //NOVOS METODOS
