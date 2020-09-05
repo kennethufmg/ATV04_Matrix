@@ -37,7 +37,7 @@ Matrix::Matrix(ifstream &myFile)
 	}
 	else 
 	{
-		myFile >> nRows;
+		
 		
 	}
 	myFile.close();
